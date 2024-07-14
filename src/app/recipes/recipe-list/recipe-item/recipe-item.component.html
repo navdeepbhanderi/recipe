@@ -1,0 +1,9 @@
+<a [routerLink]="[id]" routerLinkActive="active" (click)="onselected()" class="list-group-item clearfix">
+  <div class="pull-left">
+    <div class="list-group-item-heading">{{item.name}}</div>
+    <p class="list-group-item-text">{{item.description}}</p>
+  </div>
+  <span class="pull-right">
+    <img [src]="item.imagePath" style="max-height: 50px;" alt="{{item.name}}" class="img-responsive">
+  </span>
+</a>
